@@ -25,7 +25,7 @@ form {
 }
 
 input {
-  border: 1px solid #f7f7f7;
+  border: 1px solid black;
   padding: 10px;
   font-size: 16px;
 
@@ -73,7 +73,8 @@ input:focus {
 }
 
 .category {
-  color: #a1a1a1;
+  color: black;
+  font-size: 13px;
 }
 
 a {

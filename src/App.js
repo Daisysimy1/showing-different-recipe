@@ -27,9 +27,20 @@ function App() {
     []
   )
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    searchRecipes();
+  }
+
   return (
     <div className="container">
       <h1>Our Recipe App</h1>
+      <SearchBar
+        isLoading={isLoading}
+        query={query}
+        setQuery={setQuery}
+        handleSubmit={handleSubmit}
+      />
       <div className="recipes">
         { recipes ? recipes.map(recipe => (
           <RecipeCard key={recipe.idMeal} recipe={recipe} />
